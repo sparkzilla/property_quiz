@@ -9,7 +9,7 @@ class Property
     @id = options['id'].to_i() if options ['id']
     @address = options['address']
     @value = options['value']
-    @bedrooms = options['bedrooms']
+    @bedrooms = options['bedrooms'].to_i()
     @year_built = options['year_built']
 
   end
